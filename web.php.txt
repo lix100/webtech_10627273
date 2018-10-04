@@ -1,0 +1,53 @@
+<?php
+//get values passed from form in web.php
+$student_id = $POST['student_id'];
+$student_PIN = $POST['student_PIN'];
+
+$student_id = stripclashes($student_id);
+$student_PIN = stripclashes($student_PIN);
+$student_id = mysql_real_escape_string($student_id);
+$student_PIN = mysql_real_escape_string($studen_PIN);
+
+//connecting to the server to select database
+mysql_connect("localhost","root","");
+mysql_select_db("login");
+
+//query the databse for user
+$result = mysql_query( "select* from users where student id = '$student_id' and student_PIN = '$student_PIN'")
+			or die("failed to query databse" .mysql_error());
+$row = mysql_fetch_array($result);
+if ($row['student_id'] == $student_id)	&& $row['student_PIN'] == $student_PIN ){
+
+	echo "login succeded! welcome" .$row['student_id'];
+} else{
+	echo "failed to login";
+}		
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>THIS IS MY LOG IN PAGE</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div id="main-wrapper">
+		<form action="/action_page.php" method="POST">
+
+			<h1>student login</h1>
+
+
+			<p1>student id:</p1><br>
+			<input type="text" name="student id" placeholder="type your student id"/><br>
+			<p2>student PIN:</p2>
+			<input type="password" name="student PIN" placeholder="type your student PIN"/><br>
+			<input type="submit" value="login"/><br>
+			<input type="button" value="register"><br>
+
+		</form>
+
+	</div>
+
+
+</body>
+</html>

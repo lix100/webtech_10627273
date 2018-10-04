@@ -1,0 +1,54 @@
+body{
+	background:url(nycskyline.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.myform{
+	background-color:blueviolet;
+	width:400px;
+	height:600px;
+	top:25%;
+	bottom:75%;
+	right:50%;
+	align:center;
+
+}
+form{
+	text-color:white;
+	text-align:center;
+}
+h{
+
+	color:aqua;
+	font-style: italic;
+
+}
+p{
+	color:white;
+	text-align: left;
+}
+input[type=text],input[type=password]{
+	width:350px;
+	height:30px;
+	border-radius:5px;
+	left:50%;
+	right:50%;
+}
+input[type=submit]{
+	border-collapse:collapse;
+	border-width: thin;
+	border-radius:5px;
+	height:30px;
+	width:110px;
+	margin:10px;
+	background-color: aqua;
+
+}
+input[type=button] {
+	border-collapse: collapse;
+	border-width: thin;
+	border-radius:5px;
+	height: 30px;
+	width: 90px;
+	background-color:aqua;
+}

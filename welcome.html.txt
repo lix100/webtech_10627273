@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> welcome page</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+	</head>
+
+	<body>
+		<div class="navigationlinks">
+			<h>welcome student!</h>
+			<p>Welcome prospective student to this portal.This allows you to <p>
+			<ul>
+				<li><a href="Selectstudents.html">Select student data</a></li>
+				<li><a href="Deletestudents.html">Delete student data</a></li>
+				<li><a href="Insertstudents.html">Insert student data</a></li>
+				<li><a href="Updatestudents.html">Update student data</a></li>
+			</ul>
+			<div>
+
+
+
+
+
+
+
+
+	</body>
+</html>

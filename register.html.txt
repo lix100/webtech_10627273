@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>page for registration</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="myform">
+	<h>Sign up to get registered</h>
+	
+	<form align="center" action="action.php" method="post">
+		<p>First name</p>
+		<input type="text" name="firstname" placeholder="enter first name">
+		<p>Other names</p>
+		<input type="text" name="othernames" placeholder="enter other names">
+		<p> Username</p>
+		<input type="text" name="username" placeholder="enter username">
+		<p> e-mail</p>
+		<input type="text" name="username" placeholder="enter e-mail">
+		<p>Password</p>
+		<input type="password" name="password" placeholder="enter password">
+		<p>Repeat password</p>
+		<input type="password" name="password" placeholder="repeat password"><br>
+		<input type="submit" class="reg_btn" value="sign up"><br>
+		<input type="button" class="back_btn" value="back">
+		</form>
+	</div>
+
+</body>
+
+
+
+
+</html>
